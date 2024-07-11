@@ -1,0 +1,628 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>evisa.go.ke | Republic of Kenya Electronic Visa System</title>
+    <meta name="Title" content="evisa.go.ke | Republic of Kenya Electronic Visa System">
+    <meta name="Description"
+        content="Apply for a Single entry visa, Transit visa or Courtesy visa to Kenya and pay securely using your VISA card or Mastercard.">
+    <meta name="Keywords"
+        content="evisa, visa, safari, Kenya, travel, east, Africa, tanzania, uganda, rwanda, , burundi, congo">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="country" content="Kenya">
+    <meta name="Language" content="en">
+    <meta name="google-site-verification" content="huz25l_R6TYviEYZywns4a0TkVbvEzla_dXKsH5a5KQ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets-evisa/img/logos/favicon.ico">
+    <link rel="stylesheet" href="assets-evisa/style.css">
+</head>
+
+<body>
+
+    <div class="relative bg-white">
+        <div x-data="{ mobileMenuOpen: false }" class="relative bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-20sm:px-6 lg:px-20">
+                <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                        <a href="evisa.html">
+                            <span class="sr-only">eVisa Kenya</span>
+                            <img class="h-8 w-auto sm:h-10" src="assets-evisa/img/logos/evisa-logo.svg"
+                                alt="eVisa Kenya">
+                        </a>
+                    </div>
+                    <div class="-mr-2 -my-2 md:hidden">
+                        <button type="button" @click="mobileMenuOpen = true"
+                            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                            <span class="sr-only">Open menu</span>
+                            <!-- Heroicon name: menu -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
+                    <nav class="hidden md:flex space-x-10">
+
+                        <a href="evisa.html" class="text-sm uppercase font-medium text-gray-500 hover:text-gray-900">
+                            Home
+                        </a>
+
+                        <div class="relative" @click.away="flyoutMenuOpen = false" x-data="{ flyoutMenuOpen: false }">
+
+                            <button type="button" x-state:on="Item active" x-state:off="Item inactive"
+                                @click="flyoutMenuOpen = !flyoutMenuOpen"
+                                :class="{ 'text-gray-900': flyoutMenuOpen, 'text-gray-500': !flyoutMenuOpen }"
+                                class="group bg-white rounded-md text-gray-500 inline-flex items-center text-sm uppercase font-medium hover:text-gray-900 focus:outline-none">
+                                <span>Services</span>
+                                <svg x-state:on="Item active" x-state:off="Item inactive"
+                                    class="ml-2 h-5 w-5 group-hover:text-gray-500 text-gray-600"
+                                    x-bind:class="{ 'text-gray-600': flyoutMenuOpen, 'text-gray-400': !flyoutMenuOpen }"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </button>
+
+                            <div x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                                x-show="flyoutMenuOpen" x-transition:enter="transition ease-out duration-200"
+                                x-transition:enter-start="opacity-0 translate-y-1"
+                                x-transition:enter-end="opacity-100 translate-y-0"
+                                x-transition:leave="transition ease-in duration-150"
+                                x-transition:leave-start="opacity-100 translate-y-0"
+                                x-transition:leave-end="opacity-0 translate-y-1"
+                                class="absolute z-10 transform -translate-x-8 mt-8 px-2 w-max max-w-md sm:px-0">
+                                <div class="shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                    <div class="relative grid bg-white gap-6 p-8">
+
+                                        <a href="single-entry-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                                            Single Entry Visa
+                                        </a>
+
+                                        <a href="transit-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                                            Transit Visa
+                                        </a>
+
+                                        <a href="courtesy-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                                            Courtesy Visa
+                                        </a>
+                                        <a href="east-african-tourist-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                                            East African Tourist Visa
+                                        </a>
+
+                                        <a href="multiple-entry-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                                            Multiple Entry Visa
+                                        </a>
+
+                                        <a href="5yr-multiple-entry-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                                            5yr Multiple Entry Visa
+                                        </a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="eligibility.html"
+                            class="text-sm uppercase font-medium text-gray-900 hover:text-gray-900">
+                            Eligibility
+                        </a>
+
+                    </nav>
+                    <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+
+                        <a href="https://dis.ecitizen.go.ke/dashboard"
+                            class="whitespace-nowrap text-sm uppercase font-medium text-gray-500 hover:text-gray-900">
+                            Sign in
+                        </a>
+
+                        <a href="https://accounts.ecitizen.go.ke/register/visitor"
+                            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-md shadow-sm text-xs uppercase font-medium text-white bg-green-500 hover:bg-green-400">
+                            Create an account
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div x-description="Mobile menu, show/hide based on mobile menu state." x-show="mobileMenuOpen"
+                x-transition:enter="duration-200 ease-out" x-transition:enter-start="opacity-0 scale-95"
+                x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in"
+                x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
+                class="absolute top-0 inset-x-0 z-10 transition transform origin-top-right md:hidden"
+                style="display: none;">
+                <div class=" bg-white divide-y-2 divide-gray-50">
+                    <div class="pt-5 pb-6 px-5">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <img class="h-8 w-auto" src="assets-evisa/img/logos/evisa-logo.svg" alt="eVisa Kenya">
+                            </div>
+                            <div class="-mr-2">
+                                <button type="button" @click="mobileMenuOpen = false"
+                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <span class="sr-only">Close menu</span>
+                                    <!-- Heroicon name: x -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <nav class="grid space-y-4">
+                                <a href="evisa.html"
+                                    class="text-sm uppercase font-medium text-gray-900 hover:text-gray-900">
+                                    Home
+                                </a>
+
+                                <div class="text-sm uppercase font-medium">
+                                    <button type="button"
+                                        class="group mb-5 text-gray-500 inline-flex items-center text-sm uppercase font-medium hover:text-gray-900 focus:outline-none">
+                                        <span>Services</span>
+                                        <svg class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                            aria-hidden="true">
+                                            <path fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="grid space-y-4 py-4 border-t">
+                                        <a href="single-entry-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                                            Single Entry Visa
+                                        </a>
+
+                                        <a href="transit-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-900 rounded-lg hover:text-gray-900">
+                                            Transit Visa
+                                        </a>
+
+                                        <a href="courtesy-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                                            Courtesy Visa
+                                        </a>
+
+                                        <a href="east-african-tourist-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                                            East African Tourist Visa
+                                        </a>
+
+                                        <a href="multiple-entry-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                                            Multiple Entry Visa
+                                        </a>
+
+                                        <a href="5yr-multiple-entry-visa.html"
+                                            class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                                            5yr Multiple Entry Visa
+                                        </a>
+
+                                    </div>
+                                </div>
+
+                                <a href="eligibility.html"
+                                    class="text-sm uppercase font-medium text-gray-500 hover:text-gray-900">
+                                    Eligibility
+                                </a>
+
+                            </nav>
+                        </div>
+
+
+                    </div>
+
+                    <div class="grid gap-x-4 py-6 px-5">
+                        <a href="https://dis.ecitizen.go.ke/dashboard"
+                            class="mb-3 text-gray-800 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-xs uppercase font-medium hover:border-green-400">
+                            Sign in
+                        </a>
+
+                        <a href="https://accounts.ecitizen.go.ke/register/visitor"
+                            class="whitespace-nowrap inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-sm shadow-sm text-xs uppercase font-medium text-white bg-green-500 hover:bg-green-400">
+                            Create an account
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <section class="bg-white">
+
+            <div class="relative vh-70 max-w-xl mx-auto lg:max-w-7xl">
+
+                <img class="absolute inset-0 w-full h-full object-cover z-0" src="assets-evisa/img/images/invest.jpg"
+                    alt="Fast-tracked evisa">
+
+                <div class="relative py-12 px-4 md:px-20 pt-24 md:w-3/5">
+
+                    <h1 class="text-2xl sm:text-xl tracking-tight font-extrabold  sm:mt-5 lg:mt-6 lg:text-4xl">
+                        <span class="sm:block">Services</span>
+                    </h1>
+
+                    <p class="font-normal mt-4 text-3xl leading-6 text-gray-900">Terms of service</p>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="bg-white">
+            <div class="pb-16 sm:pb-20">
+                <div class="max-w-7xl mx-auto p-8 lg:p-20 bg-white border-t-8 border-green-500 relative">
+
+                    <!-- ... -->
+                    <div class="prose prose-indigo prose-lg mb-10">
+                        <h1 class="text-2xl sm:text-xl tracking-tight font-extrabold lg:text-4xl">
+                            <span class="sm:block">Terms of service</span>
+                        </h1>
+
+                    </div>
+                    <div class="prose prose-indigo prose-lg">
+
+                        <h3>Acceptance of Terms and Conditions</h3>
+
+                        <p>The Government of Kenya makes this Web site; eCitizen.go.ke service available to you on the
+                            terms and conditions set out hereunder. This is a service created for the convenience of the
+                            public. If you continue to browse and use this website you are agreeing to comply with and
+                            be bound by the following terms and conditions of use. By accessing or using the Government
+                            Of Kenya “eCitizen” Online Payment website, you agree to be bound by all of the terms and
+                            conditions contained herein. eCitizen may modify this document at any time, and you agree
+                            that such modifications will be effective immediately upon posting of the modified document.
+                            You agree that by using our website after any such modifications, you will be deemed to have
+                            reviewed, agreed to and accepted the modified document. You agree that you will not
+                            intentionally provide false information when accessing or using eCitizen Online Payment
+                            Service. You also agree that you will not falsify, forge, or otherwise tamper with any
+                            information in the emails or SMS you receive as part of the Online Payment Service. On this
+                            Web site, the term Service refers to licences, registrations, permits, certificates,
+                            authorisations, accreditations, exemptions that are incorporated into the Web site.
+                        </p>
+                        <h3>Privacy Statement</h3>
+
+                        <p>eCitizen is committed to protecting your online privacy and the confidentiality of personal
+                            information you may provide while interacting with us on the web. This policy seeks to
+                            clarify our efforts and activities on the subject of privacy and related topics. eCitizen
+                            has created this policy statement in order to demonstrate eCitizen's commitment to privacy.
+                            When you follow a link to any other web site, even the site of another governmental agency,
+                            you are subject to the privacy policy of that site. eCitizen is not responsible for the
+                            privacy practices or content of other Web sites. You should check the privacy policy of
+                            their sites if you have concerns about how they handle your personal identifiable
+                            information.
+                        </p>
+                        <h3>Collection of Personal Information</h3>
+
+                        <p>No personally identifiable information is automatically collected about visitors who simply
+                            browse this site or who download information from it. eCitizen does not release any
+                            information about the collection of IP addresses to any third party, except under court
+                            order or as required by law. Our web servers maintain logs of user activity in order to help
+                            us manage the web site. Information stored in these logs does not identify you personally.
+                            The logs store such things as the domain name and IP address from which you accessed our web
+                            site; the type of browser and operating system you used; the date and time you accessed our
+                            site; the pages you visited; and the country or region of the world from which you accessed
+                            this site. eCitizen staff may use this information to learn how many visitors, where the
+                            visitors are located, which parts of our web site are of most interest to visitors, and
+                            other facts that will help us improve the web site and the services we offer.
+                        </p>
+                        <h3>If You Send Us Personal Information</h3>
+
+                        <p>ECitizen values your use of this site and values your feedback. If you participate in a
+                            survey or send us an e-mail, your e-mail address and the other information you volunteered
+                            will be collected. Visitors who request services through this site may be required to
+                            furnish additional information in order to provide the service requested. The additional
+                            information collected will be no more specific than if the visitor were requesting the
+                            service by any other means, including by telephone or an in-person visit to a government
+                            office. We may share this information with another government agency or organization if that
+                            is required to provide the help you are requesting or as required to be disclosed by law, or
+                            court order. We provide information about your accounts or other personally identifiable
+                            data to third parties only when the information is necessary to complete a transaction you
+                            initiated, or when service requires disclosure. We may share the aggregate (statistical)
+                            information with third parties without reference to individual information. We may e-mail
+                            you regarding billing or service-related issues.</p>
+                        <h3>Security of Your Personal Information</h3>
+
+                        <p>While no web site can protect itself against all eventualities, every effort is made to
+                            protect any sensitive personal information you give us. We will not rent, sell or give away
+                            any information identifying you individually (name, address, phone number, etc.) to a third
+                            party for marketing or mailing list purposes without your permission. We will also not
+                            disclose credit card information, except for purposes related to your credit card
+                            transaction, or with your permission, or as required by law.
+                        </p>
+
+                        <h3>Service availability</h3>
+
+                        <p>It is impossible for the Government of Kenya to ensure that the services are provided to you
+                            at all times or at any specific times or will be able to operate at all times error-free.
+                            After hours provision of services are influenced by availability of related computer
+                            systems. The Government of Kenya makes no warranties in regard to the availability of
+                            services but all reasonable efforts will be made to provide the best possible service to
+                            you. Notices regarding planned system outages will be made available on the Web site’s home
+                            page.
+                        </p>
+                        <h3>Customer Reference Number, User ID and Password</h3>
+
+                        <p>Your unique Customer Reference Number shall be you National ID or any other number provided
+                            by the Ministry of Interior and Coordination of National Government, User Name and Password
+                            are very important pieces of information and it is your responsibility to keep them secure.
+                            You agree to: choose a new Password whenever you are required to do so; not disclose your
+                            Customer Reference Number, User name or Password to any other person, including family
+                            members; take reasonable care when accessing the service to ensure that your Customer
+                            Reference Number, User Name or Password is not disclosed to any other person; and take every
+                            reasonable precaution to prevent the spread or diffusion of any software contamination
+                            including computer viruses. If you suspect that someone may know your user name before you
+                            have used it to log in to the system, you agree to advise the relevant licensing authority.
+                            If you suspect that someone may know your Password, you agree to login and change it
+                            immediately and to also advise the relevant licensing authority, in writing, of the
+                            suspected breach of the Password, e.g. by using the email facility at the Contact Us link on
+                            the home page. You agree that you will be responsible for any transactions made in relation
+                            to your licence using the Customer Reference Number, User Name or Password.
+                        </p>
+                        <h3>Digital Payments</h3>
+
+                        <p>The Government of Kenya shall endeavour to provide digital payments modes to citizens via all
+                            viable payment channels by availing payments via all banks, mobile payment platforms as well
+                            as payments from other financial services providers where citizens hold funds. The use of
+                            the eCitizen services is subject to a convenience fee that shall go towards the provision of
+                            these services and may vary from service to service on a per transaction basis. You agree
+                            that a payment instruction that is given before the cut-off time for a banking business day
+                            will be processed on the same day but if it is given after the cut-off time it may be
+                            processed on the next banking business day after the instruction is given. Should your
+                            payment service provider reverse your payment for any reason, the lodgement made in relation
+                            to that transaction may also be reversed. This could have implications for the
+                            granting/continuation of your licence. You are responsible for ensuring that payments are
+                            made only using valid credit cards.
+                        </p>
+                        <h3>Refund Policy</h3>
+
+                        <p>In the event that your payment to the website was charged to your credit card in error, we
+                            will honor your request to refund the original transaction and refund your payment in full,
+                            as long as the request is made within ninety days from the transaction processing date. The
+                            period of ninety days will begin from the transaction processing date. Be aware that credit
+                            card refunds can take anywhere from 3-10 days to reflect on your credit card account. We
+                            reserve the right to revise this policy at any time.
+                        </p>
+                        <h3>Access to the service</h3>
+
+                        <p>Your access to the service will be denied if you enter incorrect identification information
+                            on more than 3 consecutive occasions. The Government of Kenya reserves the right to deny or
+                            revoke access to the Web site where justified.
+                        </p>
+                        <h3>Public Register Terms &amp; Conditions</h3>
+
+                        <p>The Public Register, which is maintained by the Government Payments Service, records
+                            information relating to payments such as date of issue and expiry of payment service,
+                            conditions of the service Details of a business, the service category for which the website
+                            user is entitled to access. Use of information in this public register may be governed by
+                            terms and conditions stipulated by the Ministry Department or Agency providing the service.
+                            You need to be aware of, and agree to these conditions before you use the public register.
+                            Note that not all licensing authorities provide or maintain terms and conditions link for
+                            public register. Governing law
+                        </p>
+                        <p></p>ECITIZEN DOES NOT MAKE ANY WARRANTIES CONCERNING THE ONLINE PAYMENT SERVICE INCLUDING,
+                        WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR
+                        NON-INFRINGEMENT OF THIRD PARTY PROPRIETARY RIGHTS UNLESS DISCLAIMING SUCH WARRANTIES IS
+                        PROHIBITED BY LAW. ECITIZEN MAKES NO WARRANTIES OTHER THAN THOSE EXPRESSLY SET FORTH HEREIN.
+                        ECITIZEN WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING FROM THE USE OF THIS SITE,
+                        INCLUDING, BUT NOT LIMITED TO, DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL AND PUNITIVE DAMAGES.
+                        FURTHER, YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT
+                        MAY RESULT FROM THE DOWNLOADING OF ANY MATERIAL. NO ADVICE OR INFORMATION, WHETHER ORAL OR
+                        WRITTEN, OBTAINED BY YOU FROM ECITIZEN OR THROUGH ECITIZEN ON-LINE PAYMENT SERVICE WILL CREATE
+                        ANY WARRANTY NOT EXPRESSLY STATED IN THESE TERMS AND CONDITIONS. YOU EXPRESSLY AGREE THAT YOUR
+                        USE OF THIS SITE IS AT YOUR SOLE RISK.
+
+                        <p>You agree to defend, indemnify and hold harmless eCitizen, and its officers, officials,
+                            directors, employees, agents, successors or assigns from any and all claims, liabilities,
+                            costs, and expenses (including reasonable legal and experts' fees) arising in any way from
+                            your use of the On-line Government Payment website and service or the placement or
+                            transmission of any message, information, software or other materials or content on or
+                            through the Digital Payments website by you or users of your user account or related to any
+                            violation of these Terms and Conditions by you or users of your account.
+                        </p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <section class="bg-red-500 max-w-7xl mx-auto">
+            <div class="px-4 py-12 sm:px-6 lg:py-24 lg:px-20">
+                <div class="grid gap-8 lg:grid-cols-2">
+                    <div class="flex flex-col overflow-hidden bg-white border p-7">
+                        <div>
+                            <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-2xl max-w-sm">
+                                Get your account today
+                            </h2>
+                            <p class="md:w-4/6 mt-4 font-normal text-lg leading-6 text-gray-900">
+                                One account is all you need to access all Government Services
+                            </p>
+                            <div class="mt-12 inline-flex items-center">
+                                <a href="https://accounts.ecitizen.go.ke/register/visitor"
+                                    class="btn bg-black text-white">Create an account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="bg-white" aria-labelledby="footerHeading">
+        <h2 id="footerHeading" class="sr-only">Footer</h2>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-24">
+            <div class="pb-8 grid grid-cols-1 md:grid-cols-3 md:gap-8">
+                <div>
+                    <ul class="mt-4 space-y-4">
+
+                        <li>
+                            <a href="https://accounts.ecitizen.go.ke/register/visitor"
+                                class="text-base text-gray-500 hover:text-gray-900">
+                                Create an account
+                            </a>
+                        </li>
+                        <li>
+                            <a href="eligibility.html" class="text-base text-gray-500 hover:text-gray-900">
+                                Eligibility
+                            </a>
+                        </li>
+                        <li>
+                            <a href="terms-of-service.html" class="text-base text-gray-500 hover:text-gray-900">
+                                Terms of Service
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="#" class="text-base text-gray-100 hover:text-gray-300">
+                                Press / Media
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-base text-gray-100 hover:text-gray-300">
+                                Become an Agent
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-base text-gray-100 hover:text-gray-300">
+                                Developers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about-evisa.html" class="text-base text-gray-500 hover:text-gray-900">
+                                About eVisa
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="mt-4 space-y-4">
+
+
+                        <li>
+                            <a href="#" class="text-base text-gray-100 hover:text-gray-300">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
+                <div class="flex space-x-6 md:order-2">
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </a>
+
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <span class="sr-only">Twitter</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                        </svg>
+                    </a>
+
+                    <a href="#" class="text-gray-400 hover:text-gray-500">
+                        <span class="sr-only">Linkedin</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+
+                </div>
+                <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+                    &copy; 2020 - Republic of Kenya - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+    <script>
+        (function (document) {
+            'use strict';
+
+            var TableFilter = (function (myArray) {
+                var search_input;
+
+                function _onInputSearch(e) {
+                    search_input = e.target;
+                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                    myArray.forEach.call(tables, function (table) {
+                        myArray.forEach.call(table.tBodies, function (tbody) {
+                            myArray.forEach.call(tbody.rows, function (row) {
+                                var text_content = row.textContent.toLowerCase();
+                                var search_val = search_input.value.toLowerCase();
+                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                            });
+                        });
+                    });
+                }
+
+                return {
+                    init: function () {
+                        var inputs = document.getElementsByClassName('search-input');
+                        myArray.forEach.call(inputs, function (input) {
+                            input.oninput = _onInputSearch;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function () {
+                if (document.readyState === 'complete') {
+                    TableFilter.init();
+                }
+            });
+
+        })(document);
+    </script>
+
+
+</body>
+
+</html>
+
+
+</html>

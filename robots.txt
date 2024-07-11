@@ -1,0 +1,3 @@
+# /robots.txt for www.evisa.go.ke
+User-agent: *
+Sitemap: http://evisa.go.ke/evisa-go-ke-sitemap.xml

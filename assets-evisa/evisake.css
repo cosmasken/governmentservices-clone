@@ -1,0 +1,107 @@
+
+.top-link {
+    @apply text-xs uppercase font-medium text-gray-300;
+}
+.top-link:hover {
+    @apply text-gray-400;
+}
+
+.btn {
+    @apply uppercase whitespace-nowrap inline-flex items-center justify-center px-6 py-2 border rounded-md shadow-sm text-sm font-medium;
+}
+
+.btn-primary {
+    @apply border-yellow-300 bg-yellow-300 text-gray-800;
+}
+
+.btn-primary:hover {
+    @apply border-yellow-300 bg-yellow-400 text-gray-900;
+}
+
+.btn-primary-outline {
+    @apply bg-transparent border-yellow-300 text-yellow-300;
+}
+
+.btn-primary-outline:hover {
+    @apply bg-transparent border-yellow-400 text-yellow-400;
+}
+
+.main-nav-item {
+    @apply border-r py-4 text-gray-500 hover:border-gray-300 hover:text-gray-700 text-center text-sm font-medium uppercase;
+}
+
+.main-nav-item.nav-item-active{
+    @apply border-yellow-500 bg-yellow-50 py-4 text-gray-900 border-b-2 text-sm text-center font-medium border-l border-r uppercase;
+}
+
+/* since nested groupes are not supported we have to use 
+     regular css for the nested dropdowns 
+  */
+li>ul {
+    transform: translatex(100%) scale(0)
+}
+
+li:hover>ul {
+    transform: translatex(101%) scale(1)
+}
+
+li>button svg {
+    transform: rotate(-90deg)
+}
+
+li:hover>button svg {
+    transform: rotate(-270deg)
+}
+
+/* Below styles fake what can be achieved with the tailwind config
+     you need to add the group-hover variant to scale and define your custom
+     min width style.
+  	 See https://codesandbox.io/s/tailwindcss-multilevel-dropdown-y91j7?file=/index.html
+  	 for implementation with config file
+  */
+.group:hover .group-hover\:scale-100 {
+    transform: scale(1)
+}
+
+.group:hover .group-hover\:-rotate-180 {
+    transform: rotate(180deg)
+}
+
+.scale-0 {
+    transform: scale(0)
+}
+
+.min-w-32 {
+    min-width: 8rem
+}
+
+.top-red-line {
+    position: relative;
+}
+
+.top-red-line:before {
+    content: '';
+    height: 3px;
+    width: 40px;
+    background-color: red;
+    position: absolute;
+    top: -15px;
+}
+
+
+.eligibility tbody tr {
+    @apply bg-gray-50;
+}
+
+.eligibility tbody tr.odd {
+    @apply bg-white;
+}
+
+
+.eligibility tbody > tr > td.reg-text {
+    @apply px-6 py-4 whitespace-nowrap text-sm text-gray-500;
+}
+
+.eligibility tbody > tr > td.big-text {
+    @apply font-medium text-gray-900;
+}

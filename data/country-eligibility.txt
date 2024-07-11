@@ -1,0 +1,788 @@
+{
+    "data": [
+        [
+            "Afghanistan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Albania",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Algeria",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Andorra",
+            "<p class=\"text-success\">YES</p>"
+        ],[
+            "Angola",
+            "<p class=\"text-success\">YES</p>"
+        ],[
+            "Antigua and Bermuda",
+            "<p class=\"text-success\">YES</p>"
+        ],[
+            "Argentina",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Armenia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Australia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Austria",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Azerbaijan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Bahamas",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Bahrain",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Bangladesh",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Barbados",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Belarus",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Belgium",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Belize",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Benin",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Bhutan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Bolivia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Bosnia Herzegovina",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Botswana",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Brazil",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Brunei",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Bulgaria",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Burkina Faso",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Burundi",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Cambodia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Cameroon",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Canada",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Cape Verde",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Central African Rep",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Chad",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Chile",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "China {P.R}",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Colombia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Comoros",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Congo {Brazzaville}",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Congo {Democratic Rep}",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Costa Rica",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Croatia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Cuba",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Cyprus",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"
+        ],
+        [
+            "Czech Republic",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Darussalam",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"
+        ],
+        [
+            "Denmark",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Djibouti",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Dominica",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"
+        ],
+        [
+            "Dominican Republic",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "East Timor",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Ecuador",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Egypt",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "El Salvador",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Equatorial Guinea",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Eritrea",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Estonia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Ethiopia",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Fiji",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Finland",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "France",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Gabon",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Gambia",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Georgia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Germany",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Ghana",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Greece",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Greenland",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Grenada",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Guatemala",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Guinea",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Guinea-Bissau",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Guyana",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Haiti",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Honduras",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Hong Kong {SAR}",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Hungary",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Iceland",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "India",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Indonesia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Iran",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Iraq",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Ireland {Republic}",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Israel",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Italy",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Ivory Coast",
+            "<p class=\"text-success\">YES</p>"        ],
+        [
+            "Jamaica",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Japan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Jordan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Kampuchea",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Kazakhstan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Kirghizistan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Kiribati",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Democratic People's Republic of KoreaKorea north",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Korea South",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Kosovo",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Kuwait",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Laos",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Latvia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Lebanon",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Lesotho",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Liberia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Libya",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Liechtenstein",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Lithuania",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Luxembourg",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Macedonia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Macau {SAR}",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Madagascar",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Malawi",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Malagasy",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Malaysia (For less than 30 days stay)",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Maldives",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Mali",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Malta",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Marshall Islands",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Mauritania",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Mauritius",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"
+        ],
+        [
+            "Mexico",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Micronesia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Moldova",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Monaco",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Mongolia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Montenegro",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Morocco",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Mozambique",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Myanmar {Burma}",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Namibia",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Nauru",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Nepal",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Netherlands",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "New Zealand",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Nicaragua",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Niger",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Nigeria",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "norway",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Oman",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Pacific Isles",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Pakistan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Palau",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Palestine",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Panama",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Papua New Guinea",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Paraguay",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Peru",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Philippines",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Poland",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Portugal",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Qatar",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Reunion",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Romania",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Russian Federation",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Rwanda",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Salvador",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "St Kitts & Nevis",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "St Lucia",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Saint Vincent & the Grenadines",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Saint Christopher Cape",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Samoa",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "San Marino",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Sao Tome & Principe",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Saudi Arabia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Senegal",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Serbia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Seychelles",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Sierra Leone",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Singapore",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Slovakia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Slovenia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Solomon Islands",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Somalia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "South Africa (For less than 30 days stay)",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "South Sudan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Spain",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Sri Lanka",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Sudan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Suriname",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Swaziland",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Sweden",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Switzerland",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Syria",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Taiwan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Tajikistan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Tanzania",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Thailand",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Togo",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Tonga",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Trinidad & Tobago",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Tunisia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Turkey",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Turkmenistan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Tuvalu",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Uganda",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Ukraine",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "United Arab Emirates",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "United Kingdom",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "United States",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Uruguay",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Uzbekistan",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Vanuatu",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Vatican City",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Venezuela",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Vietnam",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Yemen",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Yugoslavia and former States of Yugoslavia",
+            "<p class=\"text-success\">YES</p>"
+        ],
+        [
+            "Zambia",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ],
+        [
+            "Zimbabwe",
+            "<p class=\"badge badge-default\">EXEMPTED</p>"        ]
+    ]
+}

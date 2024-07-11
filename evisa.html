@@ -1,0 +1,778 @@
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>evisa.go.ke | Republic of Kenya Electronic Visa System</title>
+  <meta name="Title" content="evisa.go.ke | Republic of Kenya Electronic Visa System">
+  <meta name="Description"
+    content="Apply for a Single entry visa, Transit visa or Courtesy visa to Kenya and pay securely using your VISA card or Mastercard.">
+  <meta name="Keywords"
+    content="evisa, visa, safari, Kenya, travel, east, Africa, tanzania, uganda, rwanda, , burundi, congo">
+  <meta name="robots" content="INDEX, FOLLOW">
+  <meta name="country" content="Kenya">
+  <meta name="Language" content="en">
+  <meta name="google-site-verification" content="huz25l_R6TYviEYZywns4a0TkVbvEzla_dXKsH5a5KQ" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="assets-evisa/img/logos/favicon.ico">
+  <link rel="stylesheet" href="assets-evisa/style.css">
+</head>
+
+<body>
+
+  <div class="relative bg-gray-50">
+    <div x-data="{ mobileMenuOpen: false }" class="relative bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-20sm:px-6 lg:px-20">
+        <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+          <div class="flex justify-start lg:w-0 lg:flex-1">
+            <a href="evisa.html">
+              <span class="sr-only">eVisa Kenya</span>
+              <img class="h-8 w-auto sm:h-10" src="assets-evisa/img/logos/evisa-logo.svg" alt="eVisa Kenya">
+            </a>
+          </div>
+          <div class="-mr-2 -my-2 md:hidden">
+            <button type="button" @click="mobileMenuOpen = true"
+              class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <span class="sr-only">Open menu</span>
+              <!-- Heroicon name: menu -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+          <nav class="hidden md:flex space-x-10">
+
+            <a href="evisa.html" class="text-sm uppercase font-medium text-gray-900 hover:text-gray-900">
+              Home
+            </a>
+
+            <div class="relative" @click.away="flyoutMenuOpen = false" x-data="{ flyoutMenuOpen: false }">
+
+              <button type="button" x-state:on="Item active" x-state:off="Item inactive"
+                @click="flyoutMenuOpen = !flyoutMenuOpen"
+                :class="{ 'text-gray-900': flyoutMenuOpen, 'text-gray-500': !flyoutMenuOpen }"
+                class="group bg-white rounded-md text-gray-500 inline-flex items-center text-sm uppercase font-medium hover:text-gray-900 focus:outline-none">
+                <span>Services</span>
+                <svg x-state:on="Item active" x-state:off="Item inactive"
+                  class="ml-2 h-5 w-5 group-hover:text-gray-500 text-gray-600"
+                  x-bind:class="{ 'text-gray-600': flyoutMenuOpen, 'text-gray-400': !flyoutMenuOpen }"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <div x-description="'Solutions' flyout menu, show/hide based on flyout menu state."
+                x-show="flyoutMenuOpen" x-transition:enter="transition ease-out duration-200"
+                x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0"
+                x-transition:leave="transition ease-in duration-150"
+                x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1"
+                class="absolute z-10 transform -translate-x-8 mt-8 px-2 w-max max-w-md sm:px-0">
+                <div class="shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                  <div class="relative grid bg-white gap-6 p-8">
+
+                    <a href="single-entry-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      Single Entry Visa
+                    </a>
+
+                    <a href="transit-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      Transit Visa
+                    </a>
+
+                    <a href="courtesy-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      Courtesy Visa
+                    </a>
+                    <a href="east-african-tourist-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      East African Tourist Visa
+                    </a>
+
+                    <a href="multiple-entry-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      Multiple Entry Visa
+                    </a>
+
+                    <a href="5yr-multiple-entry-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      5yr Multiple Entry Visa
+                    </a>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <a href="eligibility.html" class="text-sm uppercase font-medium text-gray-500 hover:text-gray-900">
+              Eligibility
+            </a>
+
+          </nav>
+          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+
+            <a href="https://dis.ecitizen.go.ke/dashboard"
+              class="whitespace-nowrap text-sm uppercase font-medium text-gray-500 hover:text-gray-900">
+              Sign in
+            </a>
+
+            <a href="https://accounts.ecitizen.go.ke/register/visitor"
+              class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-md shadow-sm text-xs uppercase font-medium text-white bg-green-500 hover:bg-green-400">
+              Create an account
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div x-description="Mobile menu, show/hide based on mobile menu state." x-show="mobileMenuOpen"
+        x-transition:enter="duration-200 ease-out" x-transition:enter-start="opacity-0 scale-95"
+        x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in"
+        x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
+        class="absolute top-0 inset-x-0 z-10 transition transform origin-top-right md:hidden" style="display: none;">
+        <div class=" bg-white divide-y-2 divide-gray-50">
+          <div class="pt-5 pb-6 px-5">
+            <div class="flex items-center justify-between">
+              <div>
+                <img class="h-8 w-auto" src="assets-evisa/img/logos/evisa-logo.svg" alt="eVisa Kenya">
+              </div>
+              <div class="-mr-2">
+                <button type="button" @click="mobileMenuOpen = false"
+                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <span class="sr-only">Close menu</span>
+                  <!-- Heroicon name: x -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="mt-6">
+              <nav class="grid space-y-4">
+                <a href="evisa.html" class="text-sm uppercase font-medium text-gray-900 hover:text-gray-900">
+                  Home
+                </a>
+
+                <div class="text-sm uppercase font-medium">
+                  <button type="button"
+                    class="group mb-5 text-gray-500 inline-flex items-center text-sm uppercase font-medium hover:text-gray-900 focus:outline-none">
+                    <span>Services</span>
+                    <svg class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+
+                  <div class="grid space-y-4 py-4 border-t">
+                    <a href="single-entry-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      Single Entry Visa
+                    </a>
+
+                    <a href="transit-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      Transit Visa
+                    </a>
+
+                    <a href="courtesy-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      Courtesy Visa
+                    </a>
+                    <a href="east-african-tourist-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      East African Tourist Visa
+                    </a>
+                    <a href="multiple-entry-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      Multiple Entry Visa
+                    </a>
+
+
+                    <a href="5yr-multiple-entry-visa.html"
+                      class="text-sm uppercase font-medium text-gray-500 rounded-lg hover:text-gray-900">
+                      5yr Multiple Entry Visa
+                    </a>
+
+                  </div>
+                </div>
+
+                <a href="eligibility.html" class="text-sm uppercase font-medium text-gray-500 hover:text-gray-900">
+                  Eligibility
+                </a>
+
+              </nav>
+            </div>
+
+
+          </div>
+
+          <div class="grid gap-x-4 py-6 px-5">
+            <a href="https://dis.ecitizen.go.ke/dashboard"
+              class="mb-3 text-gray-800 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-xs uppercase font-medium hover:border-green-400">
+              Sign in
+            </a>
+
+            <a href="https://accounts.ecitizen.go.ke/register/visitor"
+              class="whitespace-nowrap inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-sm shadow-sm text-xs uppercase font-medium text-white bg-green-500 hover:bg-green-400">
+              Create an account
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <div class="max-w-7xl mx-auto">
+        <div class="bg-gray-900 shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
+          <div class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+            <div class="lg:self-center">
+              <h2 class="text-3xl font-extrabold text-white sm:text-4xl top-red-line mt-8">
+                <span class="block">No more queues at the airport, get your evisa online.</span>
+              </h2>
+              <p class="font-normal mt-4 text-lg leading-6 text-gray-100">Enjoy the convenience. Apply for your eVisa
+                online fast
+                and safely - anywhere and anytime and get it within 48 hours.</p>
+            </div>
+          </div>
+          <div class="aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+            <img class="object-cover object-left-top" src="assets-evisa/img/images/hero.jpg" alt="App screenshot">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-7xl mx-auto">
+        <div class="px-4 md:px-20 py-6 lg:flex lg:items-end lg:justify-between bg-red-500">
+          <h2 class="text-white text-xl font-extrabold tracking-tight sm:text-2xl">
+            <span class="md:block">Verify</span>
+            <span class="md:block">an Evisa</span>
+          </h2>
+          <p class="md:w-6/12 text-white mt-4 md:mt-0 text-lg">Check the validity of a travelers evisa by confirming
+            the evisa
+            number
+            alongside passport
+            number</p>
+          <div class="mt-5 lg:mt-0 lg:flex-shrink-0">
+            <div class="inline-flex rounded-md shadow">
+              <a target="_blank" href="https://dis.ecitizen.go.ke/verify"
+                class="uppercase inline-flex items-center justify-center px-6 py-2 border border-transparent text-xs font-medium rounded-md text-gray-500 bg-white hover:bg-gray-50">
+                verify evisa
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <div class="max-w-xl mx-auto lg:max-w-7xl">
+        <div class="bg-gray-100">
+          <div class="px-4 md:px-20 pt-24 lg:flex lg:items-end lg:justify-between">
+            <h2 class="text-gray-900 text-2xl font-extrabold tracking-tight sm:text-2xl top-red-line">
+              <span class="md:block">Get Started</span>
+              <span class="md:block">with eVisa</span>
+            </h2>
+            <p class="md:w-7/12 text-gray-900 mt-4 md:mt-0 text-lg">Visitors to the Republic of Kenya can now apply for
+              their
+              eVisa
+              services in a simple, secure, and convenient way. It's a
+              3 step process.</p>
+
+            <div></div>
+
+          </div>
+          <div class="px-4 py-12 md:px-20">
+            <dl class="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-9">
+              <div>
+                <div class="h-16 w-16">
+                  <svg class="h-16 w-16" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M20.0618 29.4234C19.7751 29.4206 19.4907 29.4749 19.2254 29.5833C18.96 29.6917 18.7189 29.8519 18.5161 30.0546C18.3134 30.2573 18.1532 30.4984 18.0448 30.7638C17.9365 31.0292 17.8821 31.3135 17.885 31.6002V42.9187H53.5819V31.6002C53.5848 31.3135 53.5305 31.0292 53.4221 30.7638C53.3137 30.4984 53.1535 30.2573 52.9508 30.0546C52.7481 29.8519 52.507 29.6917 52.2416 29.5833C51.9762 29.4749 51.6918 29.4206 51.4052 29.4234H20.0618Z"
+                      fill="#E7ECF2" />
+                    <path
+                      d="M35.7337 46.4016C37.6572 46.4016 39.2165 44.8423 39.2165 42.9188C39.2165 40.9953 37.6572 39.436 35.7337 39.436C33.8102 39.436 32.2509 40.9953 32.2509 42.9188C32.2509 44.8423 33.8102 46.4016 35.7337 46.4016Z"
+                      fill="#E8292B" />
+                    <path
+                      d="M51.4051 57.7192H20.0617C19.1389 57.7166 18.2547 57.3489 17.6021 56.6965C16.9495 56.044 16.5817 55.1598 16.5789 54.237V31.6C16.5815 30.6771 16.9493 29.7927 17.6019 29.1401C18.2545 28.4876 19.1388 28.1198 20.0617 28.1172H51.4051C52.328 28.1198 53.2124 28.4876 53.865 29.1401C54.5176 29.7927 54.8854 30.6771 54.888 31.6V54.237C54.8852 55.1598 54.5174 56.044 53.8648 56.6965C53.2122 57.3489 52.3279 57.7166 51.4051 57.7192ZM20.0617 30.7293C19.831 30.7299 19.6099 30.8219 19.4468 30.985C19.2836 31.1482 19.1917 31.3693 19.191 31.6V54.237C19.1917 54.4677 19.2836 54.6888 19.4468 54.852C19.6099 55.0151 19.831 55.1071 20.0617 55.1077H51.4051C51.6359 55.1071 51.857 55.0151 52.0201 54.852C52.1833 54.6888 52.2752 54.4677 52.2758 54.237V31.6C52.2752 31.3693 52.1833 31.1482 52.0201 30.985C51.857 30.8219 51.6359 30.7299 51.4051 30.7293H20.0617Z"
+                      fill="black" />
+                    <path
+                      d="M35.7331 51.6243C33.4262 51.6175 31.2156 50.6981 29.5843 49.0668C27.953 47.4355 27.0335 45.2249 27.0267 42.9179C27.0259 42.0476 27.158 41.1823 27.4185 40.3519C27.4646 40.1864 27.5433 40.0318 27.6498 39.897C27.7563 39.7622 27.8886 39.6499 28.039 39.5668C28.1893 39.4837 28.3547 39.4313 28.5255 39.4127C28.6963 39.3942 28.8691 39.4098 29.0338 39.4587C29.1985 39.5076 29.3518 39.5888 29.4848 39.6976C29.6178 39.8064 29.7278 39.9405 29.8084 40.0922C29.889 40.244 29.9386 40.4102 29.9543 40.5813C29.97 40.7524 29.9515 40.9249 29.8998 41.0887C29.7279 41.6831 29.6401 42.2986 29.6388 42.9173C29.6437 44.1934 30.0504 45.4355 30.8013 46.4673C31.5523 47.499 32.6092 48.2679 33.822 48.6648C35.0347 49.0617 36.3418 49.0664 37.5574 48.6782C38.773 48.29 39.8354 47.5287 40.5937 46.5024C41.352 45.476 41.7676 44.2369 41.7816 42.9609C41.7956 41.6849 41.4071 40.4369 40.6715 39.3942C39.9358 38.3515 38.8904 37.5671 37.6836 37.1524C36.4767 36.7377 35.1699 36.7137 33.9488 37.084C33.786 37.1377 33.6139 37.1576 33.4431 37.1425C33.2724 37.1273 33.1065 37.0775 32.9557 36.9959C32.8049 36.9144 32.6723 36.8029 32.5661 36.6684C32.4599 36.5338 32.3824 36.3789 32.3381 36.2133C32.2888 36.0504 32.2723 35.8793 32.2894 35.71C32.3066 35.5406 32.3571 35.3764 32.438 35.2266C32.519 35.0769 32.6288 34.9447 32.7611 34.8376C32.8933 34.7305 33.0455 34.6507 33.2088 34.6027C34.0242 34.3391 34.8763 34.207 35.7331 34.2115C38.0422 34.2115 40.2567 35.1288 41.8895 36.7616C43.5223 38.3944 44.4395 40.6089 44.4395 42.9179C44.4395 45.227 43.5223 47.4415 41.8895 49.0743C40.2567 50.7071 38.0422 51.6243 35.7331 51.6243Z"
+                      fill="black" />
+                    <path
+                      d="M44.873 26.8114C44.7006 26.8145 44.5294 26.7829 44.3695 26.7184C44.2096 26.6539 44.0644 26.5578 43.9424 26.4359C43.8205 26.314 43.7244 26.1687 43.6599 26.0089C43.5954 25.849 43.5638 25.6777 43.567 25.5053V24.1993C43.567 22.121 42.7414 20.1279 41.2718 18.6584C39.8023 17.1888 37.8092 16.3633 35.731 16.3633C33.6527 16.3633 31.6596 17.1888 30.1901 18.6584C28.7205 20.1279 27.8949 22.121 27.8949 24.1993V25.5053C27.8949 25.8517 27.7573 26.1839 27.5124 26.4288C27.2675 26.6738 26.9353 26.8114 26.5889 26.8114C26.2425 26.8114 25.9103 26.6738 25.6654 26.4288C25.4204 26.1839 25.2828 25.8517 25.2828 25.5053V24.1993C25.2828 21.4283 26.3836 18.7709 28.3429 16.8116C30.3023 14.8522 32.9597 13.7515 35.7306 13.7515C38.5016 13.7515 41.159 14.8522 43.1184 16.8116C45.0777 18.7709 46.1784 21.4283 46.1784 24.1993V25.5053C46.1816 25.6777 46.15 25.8489 46.0855 26.0087C46.0211 26.1686 45.925 26.3138 45.8032 26.4357C45.6813 26.5576 45.5362 26.6537 45.3763 26.7182C45.2165 26.7828 45.0453 26.8145 44.873 26.8114Z"
+                      fill="black" />
+                    <path
+                      d="M50.0991 26.8113C49.9267 26.8145 49.7554 26.7828 49.5956 26.7183C49.4357 26.6538 49.2904 26.5577 49.1685 26.4358C49.0466 26.3139 48.9505 26.1687 48.886 26.0088C48.8215 25.8489 48.7899 25.6776 48.793 25.5052V24.1998C48.793 22.4848 48.4552 20.7865 47.7989 19.202C47.1426 17.6175 46.1806 16.1778 44.9679 14.965C43.7551 13.7523 42.3154 12.7903 40.7309 12.134C39.1464 11.4777 37.4482 11.1399 35.7331 11.1399C34.0181 11.1399 32.3198 11.4777 30.7353 12.134C29.1508 12.7903 27.7111 13.7523 26.4984 14.965C25.2856 16.1778 24.3237 17.6175 23.6673 19.202C23.011 20.7865 22.6732 22.4848 22.6732 24.1998V25.5059C22.6732 25.8522 22.5356 26.1844 22.2907 26.4294C22.0457 26.6743 21.7135 26.8119 21.3672 26.8119C21.0208 26.8119 20.6886 26.6743 20.4436 26.4294C20.1987 26.1844 20.0611 25.8522 20.0611 25.5059V24.1998C20.0482 22.1335 20.444 20.0851 21.2258 18.1723C22.0075 16.2596 23.1599 14.5203 24.6164 13.0547C26.0729 11.589 27.8049 10.4258 29.7127 9.63205C31.6205 8.83831 33.6665 8.42969 35.7328 8.42969C37.7991 8.42969 39.8451 8.83831 41.7529 9.63205C43.6607 10.4258 45.3927 11.589 46.8492 13.0547C48.3058 14.5203 49.4581 16.2596 50.2399 18.1723C51.0216 20.0851 51.4175 22.1335 51.4045 24.1998V25.5059C51.4076 25.6781 51.3759 25.8493 51.3114 26.009C51.2469 26.1688 51.1509 26.314 51.029 26.4358C50.9072 26.5576 50.762 26.6537 50.6023 26.7182C50.4425 26.7827 50.2714 26.8144 50.0991 26.8113Z"
+                      fill="black" />
+                  </svg>
+                </div>
+                <div class="mt-5">
+                  <dt class="text-lg leading-6 font-bold text-gray-900">
+                    Sign up for an account
+                  </dt>
+                  <dd class="mt-2 text-base text-gray-500">
+                    Take a few seconds to sign up. All you need is your ID number for citizens and residents
+                  </dd>
+                </div>
+              </div>
+
+              <div>
+                <div class="h-16 w-16">
+                  <svg class="h-16 w-16" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M50.6966 52.2088H19.2224C18.1617 52.2041 17.1458 51.7806 16.3958 51.0306C15.6457 50.2806 15.2223 49.2647 15.2176 48.204V23.6512C15.2223 22.5905 15.6457 21.5746 16.3958 20.8246C17.1458 20.0746 18.1617 19.6512 19.2224 19.6465H50.6966C51.7572 19.6512 52.7731 20.0746 53.5232 20.8246C54.2732 21.5746 54.6966 22.5905 54.7013 23.6512V48.204C54.6889 49.2623 54.2629 50.2737 53.5146 51.0221C52.7662 51.7704 51.7548 52.1963 50.6966 52.2088Z"
+                      fill="white" />
+                    <path
+                      d="M15.2176 44.8521V48.2477C15.2223 49.3083 15.6457 50.3242 16.3958 51.0743C17.1458 51.8243 18.1617 52.2477 19.2224 52.2524H50.6966C51.757 52.2474 52.7726 51.8238 53.5224 51.0738C54.2721 50.3238 54.6954 49.3081 54.7001 48.2477V44.8521H15.2176Z"
+                      fill="#E7ECF2" />
+                    <path d="M40.6847 58.7386H29.2354L30.8896 52.209H39.0305L40.6847 58.7386Z" fill="white" />
+                    <path
+                      d="M44.6864 59.9142H25.2301C24.9184 59.9142 24.6195 59.7904 24.399 59.57C24.1786 59.3496 24.0548 59.0507 24.0548 58.739C24.0548 58.4273 24.1786 58.1283 24.399 57.9079C24.6195 57.6875 24.9184 57.5637 25.2301 57.5637C25.8743 57.5576 26.5074 57.3961 27.0758 57.093C27.6442 56.7898 28.131 56.3539 28.4949 55.8223C28.6708 55.563 28.9415 55.3832 29.2486 55.3214C29.5558 55.2597 29.875 55.321 30.1374 55.4921C30.3998 55.6633 30.5846 55.9307 30.6519 56.2367C30.7192 56.5427 30.6637 56.8629 30.4973 57.1284C30.3665 57.3027 30.2799 57.4354 30.1903 57.5637H39.4622C39.0964 57.0362 38.8308 56.4459 38.6787 55.8223L37.8516 52.5575C37.8144 52.406 37.8074 52.2486 37.8311 52.0944C37.8547 51.9402 37.9085 51.7922 37.9893 51.6587C38.0702 51.5253 38.1765 51.4091 38.3023 51.3168C38.4281 51.2245 38.5708 51.1578 38.7223 51.1206C38.8738 51.0835 39.0311 51.0765 39.1854 51.1001C39.3396 51.1238 39.4876 51.1776 39.621 51.2584C39.7545 51.3393 39.8706 51.4456 39.963 51.5714C40.0553 51.6971 40.1219 51.8398 40.1591 51.9913L40.9862 55.2562C41.1589 55.9319 41.5528 56.5304 42.105 56.9564C42.6573 57.3824 43.3362 57.6113 44.0337 57.6067H44.6864C44.8419 57.6024 44.9967 57.6298 45.1412 57.6874C45.2858 57.7449 45.417 57.8313 45.5271 57.9413C45.6371 58.0513 45.7235 58.1826 45.781 58.3271C45.8385 58.4717 45.866 58.6264 45.8617 58.782C45.8541 59.0873 45.7265 59.3774 45.5065 59.5894C45.2865 59.8013 44.9919 59.918 44.6864 59.9142Z"
+                      fill="black" />
+                    <path
+                      d="M44.6864 59.9144H25.2301C24.9184 59.9144 24.6195 59.7906 24.399 59.5702C24.1786 59.3498 24.0548 59.0509 24.0548 58.7392C24.0548 58.4275 24.1786 58.1285 24.399 57.9081C24.6195 57.6877 24.9184 57.5639 25.2301 57.5639H44.6459C44.8014 57.5596 44.9561 57.587 45.1007 57.6446C45.2452 57.7021 45.3765 57.7885 45.4865 57.8985C45.5965 58.0085 45.6829 58.1398 45.7405 58.2844C45.798 58.4289 45.8255 58.5837 45.8211 58.7392C45.8248 59.045 45.7077 59.3399 45.4952 59.5599C45.2828 59.78 44.9922 59.9074 44.6864 59.9144Z"
+                      fill="black" />
+                    <path
+                      d="M50.6966 53.4282H19.223C18.5421 53.4303 17.8675 53.2977 17.2381 53.038C16.6086 52.7784 16.0367 52.3969 15.5552 51.9154C15.0738 51.4339 14.6922 50.862 14.4326 50.2326C14.173 49.6031 14.0404 48.9285 14.0424 48.2476V25.6511C14.0385 25.4959 14.0663 25.3415 14.124 25.1973C14.1817 25.0531 14.2682 24.9222 14.3782 24.8125C14.4881 24.7028 14.6193 24.6167 14.7636 24.5594C14.9079 24.502 15.0624 24.4747 15.2177 24.479C15.3722 24.4783 15.5253 24.5083 15.6682 24.5671C15.8111 24.6259 15.9409 24.7125 16.0501 24.8217C16.1594 24.931 16.2459 25.0608 16.3048 25.2037C16.3636 25.3466 16.3936 25.4997 16.3929 25.6542V48.204C16.3881 48.5712 16.4569 48.9356 16.5952 49.2758C16.7335 49.6159 16.9386 49.925 17.1982 50.1846C17.4579 50.4443 17.7669 50.6493 18.1071 50.7876C18.4472 50.9259 18.8116 50.9947 19.1788 50.9899H50.653C51.0202 50.9947 51.3846 50.9259 51.7248 50.7876C52.0649 50.6493 52.3739 50.4443 52.6336 50.1846C52.8932 49.925 53.0983 49.6159 53.2366 49.2758C53.3749 48.9356 53.4437 48.5712 53.4389 48.204V25.6542C53.4389 25.3425 53.5627 25.0436 53.7831 24.8232C54.0035 24.6028 54.3024 24.479 54.6141 24.479C54.9258 24.479 55.2248 24.6028 55.4452 24.8232C55.6656 25.0436 55.7894 25.3425 55.7894 25.6542V48.204C55.8095 48.8845 55.6925 49.562 55.4454 50.1963C55.1982 50.8305 54.826 51.4086 54.3508 51.896C53.8756 52.3835 53.3072 52.7703 52.6794 53.0336C52.0516 53.2968 51.3773 53.431 50.6966 53.4282Z"
+                      fill="black" />
+                    <path
+                      d="M54.6583 26.8293C54.5028 26.8336 54.348 26.8062 54.2035 26.7487C54.059 26.6911 53.9277 26.6047 53.8177 26.4947C53.7077 26.3847 53.6213 26.2534 53.5637 26.1089C53.5062 25.9643 53.4787 25.8096 53.4831 25.6541V23.6517C53.4879 23.2846 53.4192 22.9202 53.281 22.58C53.1428 22.2399 52.9379 21.9309 52.6784 21.6712C52.4189 21.4115 52.11 21.2063 51.7699 21.0679C51.4299 20.9295 51.0655 20.8606 50.6984 20.8652H44.6907C44.379 20.8652 44.0801 20.7414 43.8597 20.521C43.6392 20.3006 43.5154 20.0016 43.5154 19.6899C43.5154 19.3782 43.6392 19.0793 43.8597 18.8589C44.0801 18.6385 44.379 18.5147 44.6907 18.5147H50.6984C51.3793 18.5126 52.0539 18.6451 52.6834 18.9047C53.3129 19.1643 53.8849 19.5459 54.3664 20.0273C54.8478 20.5088 55.2294 21.0808 55.489 21.7103C55.7486 22.3398 55.8811 23.0144 55.879 23.6953V25.6989C55.8735 25.8534 55.8375 26.0053 55.7731 26.1458C55.7086 26.2864 55.6171 26.4128 55.5036 26.5178C55.3902 26.6229 55.2571 26.7045 55.1121 26.7579C54.967 26.8114 54.8128 26.8357 54.6583 26.8293Z"
+                      fill="black" />
+                    <path
+                      d="M15.2176 26.8295C15.0622 26.8338 14.9076 26.8064 14.7631 26.7489C14.6187 26.6914 14.4874 26.6051 14.3774 26.4953C14.2675 26.3854 14.181 26.2543 14.1234 26.1099C14.0658 25.9655 14.0382 25.8108 14.0424 25.6554V23.6518C14.0403 22.9709 14.173 22.2964 14.4326 21.6669C14.6922 21.0374 15.0737 20.4655 15.5552 19.9841C16.0367 19.5026 16.6086 19.1211 17.238 18.8614C17.8675 18.6018 18.5421 18.4692 19.223 18.4712H21.1382C21.4499 18.4712 21.7488 18.595 21.9692 18.8154C22.1896 19.0358 22.3134 19.3348 22.3134 19.6465C22.3134 19.9582 22.1896 20.2571 21.9692 20.4775C21.7488 20.6979 21.4499 20.8217 21.1382 20.8217H19.223C18.8558 20.817 18.4914 20.8857 18.1512 21.0241C17.8111 21.1624 17.5021 21.3674 17.2424 21.627C16.9828 21.8867 16.7777 22.1957 16.6394 22.5359C16.5011 22.876 16.4323 23.2404 16.4371 23.6076V25.61C16.4411 25.7712 16.4124 25.9316 16.3525 26.0814C16.2927 26.2312 16.203 26.3672 16.0889 26.4813C15.9749 26.5953 15.8388 26.685 15.689 26.7449C15.5393 26.8047 15.3789 26.8335 15.2176 26.8295Z"
+                      fill="black" />
+                    <path
+                      d="M34.938 49.7275C35.6352 49.7275 36.2004 49.1623 36.2004 48.4651C36.2004 47.7679 35.6352 47.2026 34.938 47.2026C34.2407 47.2026 33.6755 47.7679 33.6755 48.4651C33.6755 49.1623 34.2407 49.7275 34.938 49.7275Z"
+                      fill="white" />
+                    <path
+                      d="M29.279 20.8657V30.4447L44.6913 34.4494C45.0316 34.4391 45.3596 34.3191 45.6262 34.1073C45.8928 33.8955 46.084 33.6033 46.1711 33.2741L48.7396 20.9112H29.279V20.8657Z"
+                      fill="#E7ECF2" />
+                    <path
+                      d="M44.7767 14.9892V34.448H25.3173V14.9892C25.3161 14.6231 25.3874 14.2603 25.527 13.9218C25.6666 13.5833 25.8718 13.2757 26.1307 13.0168C26.3896 12.7579 26.6972 12.5527 27.0357 12.4131C27.3742 12.2735 27.737 12.2022 28.1032 12.2034H41.9902C42.3574 12.1985 42.7219 12.2672 43.0621 12.4055C43.4023 12.5438 43.7114 12.7488 43.9711 13.0084C44.2309 13.2681 44.436 13.5772 44.5743 13.9174C44.7126 14.2576 44.7814 14.622 44.7767 14.9892Z"
+                      fill="white" />
+                    <path d="M33.7627 12.29H29.4964V30.3998H33.7627V12.29Z" fill="#E8292B" />
+                    <path
+                      d="M44.7767 34.7526H25.3173C25.1618 34.7569 25.007 34.7294 24.8625 34.6719C24.7179 34.6144 24.5866 34.528 24.4766 34.418C24.3666 34.308 24.2802 34.1767 24.2227 34.0321C24.1651 33.8876 24.1377 33.7328 24.142 33.5773C24.1414 33.4228 24.1713 33.2697 24.2301 33.1268C24.289 32.9839 24.3755 32.8541 24.4848 32.7448C24.594 32.6356 24.7239 32.549 24.8667 32.4902C25.0096 32.4314 25.1627 32.4014 25.3173 32.402H43.5572V14.9886C43.5576 14.777 43.5162 14.5674 43.4354 14.3719C43.3546 14.1763 43.236 13.9987 43.0863 13.8491C42.9367 13.6995 42.7589 13.5809 42.5634 13.5002C42.3678 13.4194 42.1582 13.3781 41.9466 13.3786H28.0602C27.8485 13.3781 27.6389 13.4195 27.4432 13.5002C27.2476 13.581 27.0699 13.6996 26.9202 13.8493C26.7706 13.9989 26.6519 14.1767 26.5712 14.3723C26.4904 14.5679 26.4491 14.7776 26.4496 14.9892V29.3577C26.4539 29.5132 26.4264 29.6679 26.3689 29.8125C26.3114 29.957 26.2249 30.0883 26.1149 30.1983C26.0049 30.3083 25.8736 30.3947 25.7291 30.4523C25.5846 30.5098 25.4298 30.5372 25.2743 30.5329C25.1198 30.5336 24.9666 30.5036 24.8238 30.4448C24.6809 30.386 24.5511 30.2994 24.4418 30.1901C24.3325 30.0809 24.246 29.9511 24.1872 29.8082C24.1283 29.6653 24.0984 29.5122 24.099 29.3577V14.9886C24.1037 13.9281 24.5271 12.9122 25.2769 12.1622C26.0268 11.4122 27.0426 10.9887 28.1031 10.9839H41.9902C43.0508 10.9886 44.0667 11.412 44.8168 12.162C45.5668 12.912 45.9902 13.9279 45.9949 14.9886V33.5804C45.9784 33.8939 45.8434 34.1893 45.6172 34.407C45.391 34.6246 45.0905 34.7482 44.7767 34.7526Z"
+                      fill="black" />
+                  </svg>
+                </div>
+                <div class="mt-5">
+                  <dt class="text-lg leading-6 font-bold text-gray-900">
+                    Apply for services
+                  </dt>
+                  <dd class="mt-2 text-base text-gray-500">
+                    Fill the application then pay the fees using mobile money, cards and online banking from local
+                    banks.
+                  </dd>
+                </div>
+              </div>
+
+              <div>
+                <div class="h-16 w-16">
+                  <svg class="h-16 w-16" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M14.3525 24.3733C13.24 23.2448 12.6188 21.7223 12.6245 20.1376C12.6301 18.553 13.2621 17.0349 14.3826 15.9144C15.5031 14.7939 17.0212 14.1619 18.6059 14.1563C20.1905 14.1506 21.713 14.7718 22.8415 15.8843"
+                      fill="#E8292B" />
+                    <path
+                      d="M47.5681 15.8843C48.6965 14.7718 50.2191 14.1506 51.8037 14.1563C53.3883 14.1619 54.9064 14.7939 56.0269 15.9144C57.1474 17.0349 57.7794 18.553 57.7851 20.1376C57.7907 21.7223 57.1696 23.2448 56.0571 24.3733"
+                      fill="#E8292B" />
+                    <path
+                      d="M54.4023 57.4147C54.2077 57.4179 54.0145 57.3809 53.8349 57.306C53.6553 57.2311 53.493 57.1199 53.3584 56.9793L47.6983 51.3652C47.439 51.0848 47.2984 50.715 47.3059 50.3333C47.3133 49.9515 47.4683 49.5875 47.7383 49.3175C48.0083 49.0475 48.3723 48.8925 48.7541 48.885C49.1358 48.8776 49.5056 49.0182 49.786 49.2775L55.4019 54.8934C55.5458 55.0266 55.6607 55.188 55.7392 55.3677C55.8177 55.5473 55.8583 55.7412 55.8583 55.9373C55.8583 56.1333 55.8177 56.3273 55.7392 56.5069C55.6607 56.6865 55.5458 56.848 55.4019 56.9811C55.2757 57.1203 55.1212 57.2309 54.9488 57.3056C54.7765 57.3804 54.5902 57.4175 54.4023 57.4147Z"
+                      fill="black" />
+                    <path
+                      d="M16.0098 57.4145C15.7176 57.4137 15.4321 57.3265 15.1894 57.1637C14.9467 57.001 14.7577 56.7701 14.646 56.5C14.5344 56.23 14.5052 55.933 14.5621 55.6463C14.619 55.3597 14.7595 55.0964 14.9659 54.8895L34.1606 35.6911C34.2957 35.5451 34.4588 35.4279 34.6402 35.3464C34.8216 35.265 35.0176 35.221 35.2164 35.2171C35.4153 35.2132 35.6128 35.2495 35.7973 35.3238C35.9818 35.3981 36.1493 35.5089 36.2899 35.6495C36.4306 35.7901 36.5414 35.9577 36.6157 36.1422C36.69 36.3266 36.7263 36.5242 36.7224 36.723C36.7185 36.9219 36.6745 37.1179 36.593 37.2993C36.5116 37.4807 36.3944 37.6438 36.2483 37.7788L17.0954 56.9791C16.9524 57.1202 16.7828 57.2313 16.5964 57.3061C16.41 57.3808 16.2106 57.4177 16.0098 57.4145Z"
+                      fill="black" />
+                    <path
+                      d="M35.2045 38.26C35.0031 38.2649 34.8028 38.2288 34.6158 38.154C34.4287 38.0791 34.2589 37.9671 34.1164 37.8246C33.974 37.6822 33.8619 37.5123 33.7871 37.3253C33.7123 37.1382 33.6762 36.9379 33.6811 36.7366V14.4041C33.6811 14 33.8416 13.6124 34.1274 13.3267C34.4131 13.0409 34.8007 12.8804 35.2048 12.8804C35.6089 12.8804 35.9965 13.0409 36.2822 13.3267C36.568 13.6124 36.7285 14 36.7285 14.4041V36.7366C36.7237 37.1392 36.5616 37.524 36.2768 37.8087C35.992 38.0934 35.6072 38.2554 35.2045 38.26Z"
+                      fill="black" />
+                    <path
+                      d="M35.2045 55.9342C45.8071 55.9342 54.4023 47.339 54.4023 36.7364C54.4023 26.1337 45.8071 17.5386 35.2045 17.5386C24.6018 17.5386 16.0067 26.1337 16.0067 36.7364C16.0067 47.339 24.6018 55.9342 35.2045 55.9342Z"
+                      fill="white" />
+                    <path
+                      d="M41.082 35.3432H38.4264C38.084 34.5655 37.4627 33.9442 36.6849 33.6018L36.6413 26.7246C36.6389 26.5386 36.5998 26.355 36.5262 26.1841C36.4527 26.0133 36.3461 25.8587 36.2125 25.7292C36.079 25.5997 35.9213 25.4978 35.7483 25.4294C35.5753 25.3611 35.3905 25.3275 35.2045 25.3308C34.8244 25.334 34.4608 25.4864 34.192 25.7552C33.9233 26.0239 33.7709 26.3875 33.7677 26.7676L33.8112 33.6025C33.1955 33.8721 32.6729 34.3175 32.309 34.8827C31.9451 35.4479 31.7559 36.1079 31.7653 36.7801C31.7633 37.2437 31.8532 37.7032 32.0297 38.1319C32.2063 38.5606 32.466 38.9501 32.7938 39.278C33.1217 39.6058 33.5112 39.8655 33.9399 40.042C34.3686 40.2186 34.8281 40.3084 35.2917 40.3065C35.9593 40.2953 36.6106 40.0978 37.172 39.7363C37.7335 39.3748 38.1828 38.8637 38.4693 38.2605L41.1711 38.2169C41.3581 38.2181 41.5434 38.1815 41.7159 38.1091C41.8883 38.0368 42.0443 37.9303 42.1745 37.796C42.3047 37.6618 42.4064 37.5025 42.4734 37.3279C42.5404 37.1533 42.5713 36.967 42.5643 36.7801C42.5617 36.5883 42.5212 36.3989 42.4452 36.2228C42.3693 36.0467 42.2592 35.8874 42.1215 35.7539C41.9838 35.6204 41.8211 35.5154 41.6427 35.4449C41.4643 35.3745 41.2738 35.3399 41.082 35.3432Z"
+                      fill="black" />
+                    <path
+                      d="M35.2045 57.4146C31.1146 57.4059 27.1191 56.1847 23.7233 53.9052C20.3276 51.6257 17.684 48.3905 16.127 44.6086C14.57 40.8266 14.1694 36.6679 14.976 32.6583C15.7826 28.6488 17.7601 24.9684 20.6584 22.0828C23.5567 19.1971 27.2456 17.2357 31.2587 16.4466C35.2717 15.6575 39.4286 16.0762 43.2037 17.6498C46.9788 19.2233 50.2025 21.8809 52.4671 25.2866C54.7317 28.6923 55.9355 32.6931 55.9263 36.783C55.8896 42.2591 53.6918 47.4991 49.811 51.363C45.9303 55.2268 40.6807 57.4017 35.2045 57.4146ZM35.2045 19.1061C31.7088 19.1061 28.2916 20.1427 25.3851 22.0849C22.4785 24.027 20.2131 26.7874 18.8754 30.017C17.5377 33.2466 17.1877 36.8003 17.8698 40.2289C18.5518 43.6574 20.2352 46.8066 22.707 49.2784C25.1789 51.7502 28.3282 53.4335 31.7568 54.1154C35.1853 54.7973 38.739 54.4472 41.9686 53.1094C45.1982 51.7715 47.9585 49.5061 49.9005 46.5994C51.8425 43.6928 52.879 40.2756 52.8789 36.7799C52.8761 32.0933 51.0131 27.5994 47.6991 24.2855C44.3851 20.9716 39.8911 19.1087 35.2045 19.1061Z"
+                      fill="black" />
+                    <path
+                      d="M55.0999 24.9389C54.8532 24.9357 54.6106 24.875 54.3915 24.7617C54.1723 24.6484 53.9826 24.4856 53.8374 24.2862C52.2221 21.8352 50.1176 19.7447 47.6559 18.1458C47.3269 17.9207 47.1007 17.574 47.0273 17.1822C46.9538 16.7903 47.039 16.3853 47.2642 16.0562C47.4893 15.7272 47.8359 15.5011 48.2278 15.4276C48.6197 15.3541 49.0247 15.4393 49.3537 15.6645C52.1001 17.5185 54.4647 19.8831 56.3187 22.6295C56.5381 22.96 56.6199 23.363 56.5467 23.7529C56.4735 24.1428 56.2512 24.4887 55.927 24.7172C55.6675 24.8421 55.387 24.9173 55.0999 24.9389Z"
+                      fill="black" />
+                    <path
+                      d="M15.354 24.8523C15.0444 24.8531 14.7414 24.7623 14.4833 24.5913C14.3178 24.4822 14.176 24.3409 14.0663 24.1758C13.9566 24.0108 13.8813 23.8253 13.8447 23.6305C13.8082 23.4357 13.8112 23.2356 13.8536 23.042C13.896 22.8484 13.9769 22.6653 14.0915 22.5036C15.9518 19.8164 18.2815 17.4867 20.9687 15.6264C21.2978 15.4013 21.7028 15.3161 22.0946 15.3895C22.4865 15.463 22.8331 15.6891 23.0583 16.0182C23.2834 16.3472 23.3686 16.7522 23.2952 17.1441C23.2217 17.5359 22.9956 17.8826 22.6665 18.1077C20.2528 19.7161 18.1817 21.7868 16.5728 24.2002C16.4398 24.4015 16.2587 24.5665 16.0459 24.6803C15.8331 24.7942 15.5953 24.8533 15.354 24.8523Z"
+                      fill="black" />
+                    <path
+                      d="M39.776 14.7085C39.6717 14.7158 39.5671 14.7009 39.469 14.6649C36.6382 14.099 33.7235 14.099 30.8927 14.6649C30.5028 14.7282 30.1036 14.6354 29.7815 14.4067C29.4594 14.1779 29.2403 13.8315 29.1716 13.4425C29.103 13.0534 29.1902 12.653 29.4145 12.3278C29.6388 12.0025 29.9821 11.7787 30.3702 11.7047C33.5775 11.0952 36.8708 11.0952 40.0781 11.7047C40.4648 11.7852 40.8062 12.0101 41.0327 12.3337C41.2592 12.6573 41.3537 13.0552 41.2969 13.4461C41.2269 13.7991 41.0375 14.1173 40.7605 14.3472C40.4835 14.5771 40.1359 14.7047 39.776 14.7085Z"
+                      fill="black" />
+                  </svg>
+                </div>
+                <div class="mt-5">
+                  <dt class="text-lg leading-6 font-bold text-gray-900">
+                    Download applications
+                  </dt>
+                  <dd class="mt-2 text-base text-gray-500">
+                    Receive notifications every time your application has progressed and download your application in
+                    PDF.
+                  </dd>
+                </div>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--<section>
+
+      <div class="relative vh-70 max-w-xl mx-auto lg:max-w-7xl">
+
+        <img class="absolute inset-0 w-full h-full object-cover z-0" src="assets-evisa/img/images/invest.jpg"
+          alt="Fast-tracked evisa">
+
+        <div class="relative py-12 px-4 md:px-20 pt-24 md:w-3/5">
+          <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-2xl max-w-sm">
+            <span class="md:block">Fast-tracked eVisa</span>
+            <span class="md:block text-red-600">Coming Soon</span>
+          </h2>
+
+          <p class="font-normal mt-4 text-lg leading-6 text-gray-900">If you need your visa to be approved urgently, use
+            our popular fast-track service. You’ll avoid the stress of waiting.
+            We offer same-day visa processing, for those with imminent travel plans.</p>
+        </div>
+
+      </div>
+    </section> -->
+
+    <section>
+      <div class="max-w-xl mx-auto lg:max-w-7xl">
+        <div class="px-4 md:px-20 pt-24 lg:flex lg:items-end lg:justify-between">
+          <h2 class="text-gray-900 text-2xl font-extrabold tracking-tight sm:text-2xl top-red-line">
+            <span class="md:block">Visa</span>
+            <span class="md:block">Services</span>
+          </h2>
+          <p class="md:w-7/12 text-gray-900 mt-4 md:mt-0 text-lg">As provided for by the Kenyan constitution and
+            Citizenship and Immigration act,
+            and relates to the purpose of your travel.
+          </p>
+
+          <div></div>
+
+        </div>
+        <div class="px-4 py-12 md:px-20">
+          <dl class="space-y-10 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-8">
+            <div>
+
+              <div class="mt-5">
+                <dt class="text-lg leading-6 font-bold text-gray-900">
+                  Single Entry Visa
+                </dt>
+                <dd class="my-2 text-base text-gray-500">
+                  Issued for single entry to persons whose nationalities require a visa to enter Kenya either for
+                  business,tourism or
+                  medical reasons.
+                </dd>
+                <dd>
+                  <a href="single-entry-visa.html">Learn more</a>
+                </dd>
+              </div>
+            </div>
+
+            <div>
+              <div class="mt-5">
+                <dt class="text-lg leading-6 font-bold text-gray-900">
+                  Transit Visa
+                </dt>
+                <dd class="my-2 text-base text-gray-500">
+                  Issued to persons connecting through Kenya to other destinations for a period not exceeding 72 hours.
+                </dd>
+                <dd>
+                  <a href="transit-visa.html">Learn more</a>
+                </dd>
+              </div>
+            </div>
+
+            <div>
+              <div class="mt-5">
+                <dt class="text-lg leading-6 font-bold text-gray-900">
+                  Courtesy Entry Visa
+                </dt>
+                <dd class="my-2 text-base text-gray-500">
+                  Issued to Diplomatic, Official and Service passport holders on official duties, or on transit for
+                  official business or
+                  duties. It is issued free of charge / gratis.
+                </dd>
+                <dd>
+                  <a href="courtesy-visa.html">Learn more</a>
+                </dd>
+              </div>
+            </div>
+
+            <div>
+              <div class="mt-5">
+                <dt class="text-lg leading-6 font-bold text-gray-900">
+                  East African Tourist Visa
+                </dt>
+                <dd class="my-2 text-base text-gray-500">
+                  This is a joint tourist visa that entitles holders to travel to and within the Republic of Kenya,
+                  Republic of Rwanda and
+                  Republic of Uganda for the purpose of tourism.
+                </dd>
+                <dd>
+                  <a href="east-african-tourist-visa.html">Learn more</a>
+                </dd>
+              </div>
+            </div>
+
+            <div>
+              <div class="mt-5">
+                <dt class="text-lg leading-6 font-bold text-gray-900">
+                  Multiple Entry Visa
+                </dt>
+                <dd class="my-2 text-base text-gray-500">
+
+                </dd>
+                <dd>
+                  <a href="multiple-entry-visa.html">Learn more</a>
+                </dd>
+              </div>
+            </div>
+
+            <div>
+              <div class="mt-5">
+                <dt class="text-lg leading-6 font-bold text-gray-900">
+                  5yr Multiple Entry Visa
+                </dt>
+                <dd class="my-2 text-base text-gray-500">
+
+                </dd>
+                <dd>
+                  <a href="5yr-multiple-entry-visa.html">Learn more</a>
+                </dd>
+              </div>
+            </div>
+
+          </dl>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="overflow-hidden">
+      <div class="relative vh-70 max-w-xl mx-auto lg:max-w-7xl bg-gray-900">
+
+        <img class="absolute inset-0 w-full h-full object-cover z-0 opacity-30"
+          src="assets-evisa/img/images/enhancing.jpg" alt="Fast-tracked evisa">
+
+        <div class="relative lg:grid lg:grid-cols-3 lg:gap-x-8 px-4 py-12 sm:px-6 lg:py-24 lg:px-20">
+          <div class="lg:col-span-1">
+            <h2 class="text-2xl font-extrabold tracking-tight text-white sm:text-2xl">
+              Enhancing government service delivery in an increasingly digital world
+            </h2>
+          </div>
+          <dl class="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
+            <div>
+
+              <div class="mt-5">
+                <dt class="text-lg leading-6 font-extrabold text-white top-red-line">
+                  Single Sign-on
+                </dt>
+                <dd class="mt-2 text-base text-gray-100">
+                  One account is all you need, a single username and password get you into everything government.
+                </dd>
+              </div>
+            </div>
+
+            <div>
+
+              <div class="mt-5">
+                <dt class="text-lg leading-6 font-extrabold text-white top-red-line">
+                  Convenience
+                </dt>
+                <dd class="mt-2 text-base text-gray-100">
+                  Pay using mobile money, Debit Cards and online banking from local banks.
+                </dd>
+              </div>
+            </div>
+
+            <div>
+
+              <div class="mt-5">
+                <dt class="text-lg leading-6 font-extrabold text-white top-red-line">
+                  Notifications
+                </dt>
+                <dd class="mt-2 text-base text-gray-100">
+                  Receive email and sms notification every time your application has progressed.
+                </dd>
+              </div>
+            </div>
+
+            <div>
+
+              <div class="mt-5">
+                <dt class="text-lg leading-6 font-extrabold text-white top-red-line">
+                  Online Services
+                </dt>
+                <dd class="mt-2 text-base text-gray-100">
+                  Fill online application forms, submit then receive your permit in PDF format from wherever you are.
+                </dd>
+              </div>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="bg-red-500 max-w-7xl mx-auto">
+      <div class="px-4 py-12 sm:px-6 lg:py-24 lg:px-20">
+        <div class="grid gap-8 lg:grid-cols-2">
+          <div class="flex flex-col overflow-hidden bg-white border p-7">
+            <div>
+              <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-2xl max-w-sm">
+                Get your account today
+              </h2>
+              <p class="md:w-4/6 mt-4 font-normal text-lg leading-6 text-gray-900">
+                One account is all you need to access all Government Services
+              </p>
+              <div class="mt-12 inline-flex items-center">
+                <a href="https://accounts.ecitizen.go.ke/register/visitor" class="btn bg-black text-white">Create an
+                  account</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer class="bg-white" aria-labelledby="footerHeading">
+    <h2 id="footerHeading" class="sr-only">Footer</h2>
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-24">
+      <div class="pb-8 grid grid-cols-1 md:grid-cols-3 md:gap-8">
+        <div>
+          <ul class="mt-4 space-y-4">
+
+            <li>
+              <a href="https://accounts.ecitizen.go.ke/register/visitor"
+                class="text-base text-gray-500 hover:text-gray-900">
+                Create an account
+              </a>
+            </li>
+            <li>
+              <a href="eligibility.html" class="text-base text-gray-500 hover:text-gray-900">
+                Eligibility
+              </a>
+            </li>
+            <li>
+              <a href="terms-of-service.html" class="text-base text-gray-500 hover:text-gray-900">
+                Terms of Service
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mt-4 space-y-4">
+            <li>
+              <a href="#" class="text-base text-gray-100 hover:text-gray-300">
+                Press / Media
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-base text-gray-100 hover:text-gray-300">
+                Become an Agent
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="text-base text-gray-100 hover:text-gray-300">
+                Developers
+              </a>
+            </li>
+            <li>
+              <a href="about-evisa.html" class="text-base text-gray-500 hover:text-gray-900">
+                About eVisa
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mt-4 space-y-4">
+
+
+            <li>
+              <a href="#" class="text-base text-gray-100 hover:text-gray-300">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
+        <div class="flex space-x-6 md:order-2">
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Facebook</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Instagram</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          </a>
+
+          <a href="#" class="text-gray-400 hover:text-gray-500">
+            <span class="sr-only">Linkedin</span>
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+
+        </div>
+        <p class="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
+          &copy; 2020 - Republic of Kenya - All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+
+</body>
+
+</html>
